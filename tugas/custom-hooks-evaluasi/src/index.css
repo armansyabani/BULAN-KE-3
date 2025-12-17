@@ -1,0 +1,157 @@
+/* =====================
+   RESET & GLOBAL STYLE
+===================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #eef2f7, #dbeafe);
+  min-height: 100vh;
+  color: #1f2933;
+}
+
+/* =====================
+   LAYOUT
+===================== */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 2rem;
+  color: #0f172a;
+}
+
+/* =====================
+   CARD
+===================== */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+  color: #1e293b;
+}
+
+/* =====================
+   BUTTON
+===================== */
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 6px 6px 6px 0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* =====================
+   INPUT & FORM
+===================== */
+input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.9rem;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* =====================
+   TEXT & PARAGRAPH
+===================== */
+p {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+pre {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  margin-top: 12px;
+}
+
+/* =====================
+   THEME (LOCAL STORAGE)
+===================== */
+.card.dark {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.card.dark h2 {
+  color: #f8fafc;
+}
+
+.card.dark p {
+  color: #cbd5e1;
+}
+
+.card.dark button {
+  background: #22c55e;
+}
+
+.card.dark button:hover {
+  background: #16a34a;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
